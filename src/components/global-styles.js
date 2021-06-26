@@ -3,9 +3,28 @@ import { createGlobalStyle } from 'styled-components'
 const styled = { createGlobalStyle }
 
 const GlobalStyles = styled.createGlobalStyle`
-  root {
+  :root {
+    /* background colors */
+    --calculator-background-color: #696969;
+
     /* font */
     --main-font: 'Orbitron', sans-serif;
+
+    /* calculator dimensions */
+    --calculator-height: 72%;
+    --calculator-width: 36%;
+  }
+
+  /*
+  media query for tablet or smaller screen
+  */
+
+  @media screen and (max-width: 1024px) {
+    :root {
+      /* calculator dimensions */
+      --calculator-height: 100%;
+      --calculator-width: 100%;
+    }
   }
 
   /*
