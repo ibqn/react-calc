@@ -22,7 +22,7 @@ const Calculator = () => {
 
   return (
     <Container>
-      <Display />
+      <Display displayValue={displayValue} />
     </Container>
   )
 }

@@ -1,9 +1,13 @@
 import PropTypes from 'prop-types'
 
-const Display = ({ dispalayValue }) => <div>display</div>
+const Display = ({ displayValue }) => (
+  <div>
+    <p className="display-value">{displayValue}</p>
+  </div>
+)
 
 Display.propTypes = {
-  dispalayValue: PropTypes.string.isRequired
+  displayValue: PropTypes.string.isRequired
 }
 
 export default Display
