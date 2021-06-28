@@ -1,5 +1,6 @@
 import { shallow } from 'enzyme'
-import Calculator from './Calculator'
+import Calculator from './calculator'
+import Display from './display'
 
 describe('Calculator', () => {
   let wrapper
@@ -8,5 +9,9 @@ describe('Calculator', () => {
 
   it('should render a <div />', () => {
     expect(wrapper.find('div').length).toEqual(1)
+  })
+
+  it('should render the Display Component', () => {
+    expect(wrapper.containsMatchingElement(<Display />)).toEqual(true)
   })
 })

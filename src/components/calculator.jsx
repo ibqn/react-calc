@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import styled from 'styled-components'
+import Display from './display'
 
 const Container = styled.div`
   background-color: var(--calculator-background-color);
@@ -19,7 +20,11 @@ const Calculator = () => {
   const setOperator = () => {}
   const updateDisplay = () => {}
 
-  return <Container>calc</Container>
+  return (
+    <Container>
+      <Display />
+    </Container>
+  )
 }
 
 export default Calculator
